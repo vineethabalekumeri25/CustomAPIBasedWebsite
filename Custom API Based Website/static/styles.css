@@ -1,0 +1,149 @@
+/* Overall page background */
+body {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333;  /* Dark text for good readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section */
+header {
+    background-color: #333; /* Dark background for header */
+    color: yellow;  /* Yellow text for header */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+#locationForm {
+    margin-top: 10px;
+}
+
+#locationInput {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f2c200; /* Slightly darker yellow for hover effect */
+}
+
+/* Main section styling */
+main {
+    margin: 20px;
+}
+
+/* Weather details section */
+/* Weather Details Styling */
+#weatherDetails {
+    background-color: lightyellow;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weatherDetails h2 {
+    color: #333;
+}
+
+#weatherDetails p {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+    font-weight: bold; /* Make weather details bold */
+    font-size: 18px;    /* Adjust font size for better readability */
+    color: #333;        /* Dark color for contrast */
+}
+
+#weatherIcon {
+    margin-top: 10px;
+    width: 100px; /* Increased from 80px */
+    height: 100px; /* Increased from 80px */
+}
+
+/* Forecast section styling */
+#forecast {
+    background-color: rgba(255, 255, 255, 0.8);  /* Slightly transparent white background */
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#forecast h2 {
+    color: #333;
+    text-align: center;  /* Center the forecast heading */
+    font-size: 24px; /* Adjust font size if needed */
+    margin-bottom: 20px;  /* Space below the heading */
+}
+
+#forecastContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.forecastItem {
+    background-color: lightyellow;  /* Blue background color */
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forecastItem p {
+    color: black;  /* White text for better contrast on blue background */
+    font-weight: bold;  /* Make forecast text bold */
+}
+
+.forecastItem img {
+    width: 100px; /* Increased icon size */
+    height: 100px; /* Increased icon size */
+}
+
+.forecastItem p:first-child {
+    font-size: 16px;  /* Increase size for date */
+}
+
+.forecastItem p:nth-child(2),
+.forecastItem p:nth-child(3) {
+    font-size: 14px;
+    color: black;  /* Lighter color for the temperature and condition text */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    #forecastContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#iconContainer {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: orange; /* Set background color to orange */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+        <form id="locationForm">
+            <input type="text" id="locationInput" placeholder="Enter city" required>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <section id="weatherDetails">
+            <h2 id="cityName">City Name</h2>
+            <img id="weatherIcon" src="" alt="Weather Icon" style="display: none; width: 50px; height: 50px;">
+            <p id="temperature">Temperature: --°C</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="rain">Rain: --mm</p>
+            <p id="weatherCondition">Condition: --</p>
+        </section>
+        <section id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecastContainer"></div>
+        </section>
+    </main>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
