@@ -14,9 +14,9 @@ URL = f'https://c.sat.owm.io/maps/2.0/radar/7/34/46?appid=9de243494c0b295cca9337
 # Email setup
 SMTP_SERVER = 'smtp.gmail.com'  # For Gmail
 SMTP_PORT = 587
-FROM_EMAIL = 'vineethab322@gmail.com'  # Your email address
-FROM_PASSWORD = 'Neethas2504$'  # Your email password (for Gmail, consider using App Passwords)
-TO_EMAIL = 'vineethab322@gmail.com'  # Recipient's email address
+FROM_EMAIL = 'your_email@gmail.com'  # Your email address
+FROM_PASSWORD = 'your_password'  # Your email password (for Gmail, consider using App Passwords)
+TO_EMAIL = 'to_email@gmail.com'  # Recipient's email address
 
 def send_email(subject, body):
     """Send an email alert"""
